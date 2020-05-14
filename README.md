@@ -8,5 +8,6 @@ Moreover, since my neural network is implemented entirely from scratch using the
 ![](flapNNGIF.gif)
 
 **Generation 15:**
+
 ![](flapGen15GIF.gif)
 ![](ffDiagram.png)
