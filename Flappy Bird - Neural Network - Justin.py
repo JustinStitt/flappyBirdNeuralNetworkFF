@@ -9,8 +9,8 @@ pygame.init()
 #Contants
 WIDTH = 800
 HEIGHT = 600
-speed = 3
-fps = 60 * speed  #integers only
+speed = 1
+fps = 30 * speed  #integers only
 G = -1
 p_spawn_time = 1
 #end Constants
@@ -37,7 +37,7 @@ class Bird():
         self.pos = (50,random.randint(100,500))
         self.size = 30
         self.v = 0
-        self.color = (190,43,212) #magenta
+        self.color = (random.randint(3,255),random.randint(3,255),random.randint(3,255) )
         self.jump_force = 15
         self.brain = Brain()
         self.fitness = 0
@@ -186,14 +186,18 @@ def exit():
     sys.exit()
 
 def update():
+    global speed, fps
+    fps = 30 * speed
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             exit()
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_UP or event.key == pygame.K_SPACE:
-                if(len(birds) >= 1):
-                    birds[0].jump()
-                    print(birds[0].fitness)
+                speed+=1
+                print(speed)
+            elif event.key == pygame.K_DOWN:
+                speed -= 1
+                print(speed)
             if event.key == pygame.K_ESCAPE:
                 exit()
     for bird in birds:
