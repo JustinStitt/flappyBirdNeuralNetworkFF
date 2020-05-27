@@ -16,3 +16,5 @@ Moreover, since my neural network is implemented entirely from scratch using jus
 
 
 note: I made this in highschool (2017) and was not as good at implementing RL models back then. Let this serve as a nostalgic time piece and not a representation of my ML abilities.
+
+also, unlike other RL repo's on my github, this project uses a genetic training algorithm based on Darwin's theory of evolution, not on a gradient descent policy with a DQN.
