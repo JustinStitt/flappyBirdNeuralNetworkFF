@@ -13,3 +13,6 @@ Moreover, since my neural network is implemented entirely from scratch using jus
 
 ![](flapGen15GIF.gif)
 ![](ffDiagram.png)
+
+
+note: I made this in highschool (2017) and was not as good at implementing RL models back then. Let this serve as a nostalgic time piece and not a representation of my ML abilities.
